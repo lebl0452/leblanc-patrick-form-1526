@@ -1,0 +1,154 @@
+/*
+COLORS:
+
+#DDD
+#F5F5F5
+#6495ED
+
+FONTS:
+
+Arial
+Helvetica Neue
+Sans serif
+*/
+
+/*General------------------------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+label,
+input {
+    font-size: 1rem;
+    font-family: 'helvetica neue', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: 'arial', sans-serif;
+    font-weight: 100;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+textarea {
+    border: 2px solid #DDD;
+    border-radius: 4px;
+}
+
+/*END General--------------------------------*/
+
+/*Form Title---------------------------------*/
+h1 {
+    display: inline-block;
+    border: 2px solid #DDD;
+    border-radius: 4px;
+    margin-top: -30rem;
+    margin-bottom: -30rem;
+    padding: 1.5rem;
+    background-color: white;
+    position: relative;
+    top: -3rem;
+}
+
+/*END Form title----------------------------*/
+
+/*Form--------------------------------------*/
+
+.form-container {
+    background-color: #F5F5F5;
+    border: 2px solid #DDD;
+    border-radius: 4px;
+    padding: 3rem 1rem 2rem 1rem;
+    margin: 3rem 1rem auto 1rem;
+}
+
+label {
+    display: block;
+    margin: 1rem 0 .5rem 0;
+}
+
+
+div input,
+textarea {
+    display: table-cell;
+    width: 100%;
+}
+
+input {
+    height: 2rem;
+}
+
+textarea {
+    height: 4rem;
+}
+
+#submit-btn:hover {
+    cursor: pointer;
+}
+
+#submit-btn {
+    background-color: #6495ED;
+    color: white;
+    display: block;
+    padding: .5rem 3rem .5rem 3rem;
+    border: none;
+    margin: 2rem 0 0 0;
+}
+
+/*--------------RESPONSIVE DESIGN-----------------*/
+
+/***************************************************
+				Landscape phone and up - 26rem
+****************************************************/
+@media only screen and (min-width: 26rem) {
+
+    .grid {
+        display: grid;
+        grid-template: [left-side] "left right"[right-side];
+    }
+
+    .grid-name {
+        grid-template-areas: left;
+        margin-right: 1rem;
+    }
+
+    .grid-email {
+        grid-template-areas: right;
+        margin-left: 1rem;
+    }
+
+    .form-container {
+        margin: 6rem 1rem auto 1rem;
+    }
+}
+
+/***************************************************
+				Landscape phone and up - 41rem
+****************************************************/
+@media only screen and (min-width: 41rem) {
+
+    .form-container {
+        margin: 6rem 5rem auto 5rem;
+    }
+
+}
+
+/***************************************************
+				Landscape phone and up - 50rem
+****************************************************/
+@media only screen and (min-width: 50rem) {
+
+    .form-container {
+        max-width: 40rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
